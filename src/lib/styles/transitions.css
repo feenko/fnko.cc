@@ -1,0 +1,28 @@
+@keyframes page-out {
+  to {
+    opacity: 0;
+    transform: scale(0.975);
+  }
+}
+
+@keyframes page-in {
+  from {
+    opacity: 0;
+    transform: scale(1.025);
+  }
+}
+
+::view-transition-old(root) {
+  animation: page-out 180ms cubic-bezier(0.2, 0, 0, 1) both;
+}
+
+::view-transition-new(root) {
+  animation: page-in 180ms cubic-bezier(0.2, 0, 0, 1) both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  ::view-transition-old(root),
+  ::view-transition-new(root) {
+    animation: none;
+  }
+}

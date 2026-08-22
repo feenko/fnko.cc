@@ -1,0 +1,79 @@
+body {
+  font-size: 1.0625rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  max-inline-size: 60rem;
+  min-block-size: 100dvh;
+  margin-inline: auto;
+  padding-block: clamp(3rem, 8vw, 5rem);
+  padding-inline: clamp(1rem, 4vw, 2rem);
+  color: var(--muted-foreground);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--foreground);
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+  text-wrap: balance;
+}
+
+:is(h1, h2, h3, h4, h5, h6)::before {
+  color: var(--muted-foreground);
+  font-weight: 400;
+}
+
+h1::before {
+  content: "# ";
+}
+
+h2::before {
+  content: "## ";
+}
+
+h3::before {
+  content: "### ";
+}
+
+h4::before {
+  content: "#### ";
+}
+
+h5::before {
+  content: "##### ";
+}
+
+h6::before {
+  content: "###### ";
+}
+
+:where(h1, h2, h3, h4, h5, h6).no-heading-markers::before {
+  content: none;
+}
+
+strong {
+  color: var(--foreground);
+  font-weight: inherit;
+}
+
+a {
+  color: var(--foreground);
+  text-decoration-color: var(--muted);
+  text-decoration-line: underline;
+  text-decoration-thickness: 0.1em;
+  text-underline-offset: 0.2em;
+  transition: text-decoration-color 180ms ease;
+}
+
+a:hover {
+  text-decoration-color: var(--muted-foreground);
+}

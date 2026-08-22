@@ -1,0 +1,97 @@
+.post__prose {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  line-height: 1.4;
+  overflow-wrap: anywhere;
+}
+
+.post__prose p {
+  text-wrap: pretty;
+}
+
+.post__prose ul,
+.post__prose ol {
+  padding-inline-start: 1.5rem;
+}
+
+.post__prose li + li {
+  margin-block-start: 0.5rem;
+}
+
+.post__prose li > ul,
+.post__prose li > ol {
+  margin-block: 0.5rem;
+}
+
+.post__prose blockquote {
+  padding-inline-start: 1.25rem;
+  border-inline-start: 0.2rem solid var(--muted);
+  color: var(--foreground);
+  font-style: italic;
+}
+
+.post__prose hr {
+  border: 0;
+  border-block-start: 1px solid var(--muted);
+}
+
+.post__prose img,
+.post__prose video,
+.post__prose svg {
+  display: block;
+  max-inline-size: 100%;
+  block-size: auto;
+}
+
+.post__prose figcaption {
+  margin-block-start: 0.75rem;
+  color: var(--muted-foreground);
+  font-size: 0.875rem;
+  text-align: center;
+}
+
+.post__prose code,
+.post__prose kbd,
+.post__prose pre {
+  font-size: 0.9em;
+}
+
+.post__prose :not(pre) > code {
+  padding: 0.15em 0.35em;
+  border: 1px solid var(--muted);
+  color: var(--foreground);
+}
+
+.post__prose pre {
+  max-inline-size: 100%;
+  padding: 1rem 1.125rem;
+  overflow-x: auto;
+  border: 1px solid var(--muted);
+  color: var(--foreground);
+  line-height: 1.5;
+  tab-size: 2;
+}
+
+.post__prose pre code {
+  font-size: inherit;
+}
+
+.post__prose table {
+  display: block;
+  max-inline-size: 100%;
+  overflow-x: auto;
+  border-collapse: collapse;
+}
+
+.post__prose th,
+.post__prose td {
+  padding: 0.625rem 0.875rem;
+  border-block-end: 1px solid var(--muted);
+  text-align: start;
+}
+
+.post__prose th {
+  color: var(--foreground);
+  font-weight: 500;
+}

@@ -1,0 +1,9 @@
+node_modules
+
+# Output
+.svelte-kit
+.wrangler
+
+# OS
+.DS_Store
+Thumbs.db
