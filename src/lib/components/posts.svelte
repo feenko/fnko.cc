@@ -1,5 +1,5 @@
 <script lang="ts">
-  import type { PostPreview } from "$lib/types/post";
+  import type { PostPreview } from "#lib/types/post";
 
   let { posts }: { posts: PostPreview[] } = $props();
 </script>

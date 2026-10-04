@@ -1,7 +1,7 @@
 <script lang="ts">
-  import Intro from "$lib/components/intro.svelte";
-  import Projects from "$lib/components/projects.svelte";
-  import Posts from "$lib/components/posts.svelte";
+  import Intro from "#lib/components/intro.svelte";
+  import Projects from "#lib/components/projects.svelte";
+  import Posts from "#lib/components/posts.svelte";
 
   let { data } = $props();
 </script>

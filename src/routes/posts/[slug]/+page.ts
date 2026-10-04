@@ -1,4 +1,4 @@
-import { posts, slug } from "$lib/content/posts";
+import { posts, slug } from "#lib/content/posts";
 import { error } from "@sveltejs/kit";
 
 export const entries = () => Object.keys(posts).map((path) => ({ slug: slug(path) }));

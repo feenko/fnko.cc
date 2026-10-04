@@ -1,6 +1,6 @@
 <script lang="ts">
-  import blue from "$lib/assets/covers/aura-22081-blue.png?enhanced";
-  import pink from "$lib/assets/covers/aura-39581-pink.png?enhanced";
+  import blue from "#lib/assets/covers/aura-22081-blue.png?enhanced";
+  import pink from "#lib/assets/covers/aura-39581-pink.png?enhanced";
 
   const projects = [
     {

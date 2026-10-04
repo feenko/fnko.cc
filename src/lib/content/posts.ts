@@ -1,4 +1,4 @@
-import type { PostModule } from "$lib/types/post";
+import type { PostModule } from "#lib/types/post";
 
 export const posts = import.meta.glob<PostModule>("/src/content/posts/*.md", {
   eager: true,

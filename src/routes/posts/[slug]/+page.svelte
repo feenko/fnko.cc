@@ -1,5 +1,5 @@
 <script lang="ts">
-  import "$lib/styles/markdown.css";
+  import "#lib/styles/markdown.css";
 
   let { data } = $props();
 

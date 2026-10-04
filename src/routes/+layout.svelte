@@ -2,11 +2,11 @@
   import "@fontsource-variable/geist/wght.css";
   import "@fontsource-variable/geist/wght-italic.css";
 
-  import "$lib/styles/reset.css";
-  import "$lib/styles/base.css";
-  import "$lib/styles/theme.css";
-  import "$lib/styles/icons.css";
-  import "$lib/styles/transitions.css";
+  import "#lib/styles/reset.css";
+  import "#lib/styles/base.css";
+  import "#lib/styles/theme.css";
+  import "#lib/styles/icons.css";
+  import "#lib/styles/transitions.css";
 
   import geist from "@fontsource-variable/geist/files/geist-latin-wght-normal.woff2?url";
 
