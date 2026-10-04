@@ -19,6 +19,7 @@ export default defineConfig({
     enhancedImages(),
     sveltekit({
       adapter: adapter(),
+      prerender: { handleUnseenRoutes: "warn" },
       preprocess: [mdsvex({ extensions: [".md"] })],
       extensions: [".svelte", ".md"],
     }),
